@@ -3,7 +3,7 @@ import random
 import prompt
 
 
-import greetings
+from brain_games.games import greetings
 
 
 def calc_game(name):

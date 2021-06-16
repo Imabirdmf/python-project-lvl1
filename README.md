@@ -5,4 +5,8 @@
 ### Github Actions:
 ![Github Actions Status](https://github.com/Imabirdmf/python-project-lvl1/actions/workflows/main.yml/badge.svg)
 
+###brain-even:
 https://asciinema.org/a/FH0QmwCDQjMAjS61YiofD2oPE
+
+###brain-calc:
+https://asciinema.org/a/FwExWEtf4pB4BIzL8nqSy9Zza

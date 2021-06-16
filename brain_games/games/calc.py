@@ -17,7 +17,7 @@ def calc_game(name):
             total = number1 + number2
         elif operation == '*':
             total = number1 * number2
-        if answer == total:
+        if int(answer) == total:
             print('Correct!')
         else:
             greetings.failure(answer, total, name)

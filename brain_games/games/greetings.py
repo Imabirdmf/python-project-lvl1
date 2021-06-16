@@ -7,9 +7,9 @@ def welcome_user():
     return name
 
 
-def congratulations(n):
-    print('Congratulations, {}!'.format(n))
+def congratulations(name):
+    print('Congratulations, {}!'.format(name))
 
 
-def failure(a, t, n):
-    print("{} is wrong answer ;(. Correct answer was {}.\nLet's try again, {}!".format(a, t, n))
+def failure(answer, total, name):
+    print("{} is wrong answer ;(. Correct answer was {}.\nLet's try again, {}!".format(answer, total, name))

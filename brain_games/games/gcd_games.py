@@ -11,10 +11,8 @@ def gcd(name):
         number2 = random.randint(1, 100)
         if number1 % number2 == 0:
             total = number2
-            return total
         elif number2 % number1 == 0:
             total = number2
-            return total
         for i in range(1, int(number1 ** 0.5) + 1):
             if number1 % i == 0 and number2 % i == 0:
                 total = i

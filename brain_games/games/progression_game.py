@@ -9,7 +9,7 @@ def progression_game(name):
     for _ in range(1, 4):
         n = random.randint(1, 5)
         pos = random.randint(1, 10)
-        progression = [random.randint(1, 15)]
+        progression = [random.randint(1, 20)]
         s = str(progression[0]) + ' '
         for i in range(1, 11):
             progression.append(progression[i - 1] + n)

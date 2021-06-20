@@ -9,7 +9,7 @@ def is_prime(name):
     for _ in range(1, 4):
         num = random.randint(1, 100)
         flag = True
-        for i in range(2, num ** 0.5 + 1):
+        for i in range(2, int(num ** 0.5) + 1):
             if num % i == 0:
                 flag = False
         if num > 1 and flag is True:
@@ -17,7 +17,7 @@ def is_prime(name):
         else:
             total = 'no'
         answer = prompt.string('Question: {}\nYour answer: '.format(num))
-        if int(answer) == total:
+        if answer == total:
             print('Correct!')
         else:
             greetings.failure(answer, total, name)

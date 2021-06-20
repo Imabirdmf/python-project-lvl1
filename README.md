@@ -16,3 +16,6 @@ https://asciinema.org/a/wn0lVMRECEoUkIO5kwnEvCC0p
 
 ###brain-prg:
 https://asciinema.org/a/MnoYtzv54yCN5h3XcCOhOQINg
+
+###brain-prime
+https://asciinema.org/a/CZYLAPzIOt5EolePsskU15s52

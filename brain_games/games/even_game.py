@@ -9,9 +9,9 @@ def even_game(name):
     for _ in range(1, 4):
         number = random.randint(1, 1000)
         answer = prompt.string('Question: {}\nYour answer: '.format(number))
-        if number % 2 == 0 and answer == 'yes':
+        if number % 2 == 0:
             total = 'yes'
-        elif number % 2 != 0 and answer == 'no':
+        elif number % 2 != 0:
             total = 'no'
         if answer == total:
             print('Correct!')

@@ -10,14 +10,9 @@ def gcd(name):
         n1 = random.randint(1, 100)
         n2 = random.randint(1, 100)
         answer = prompt.string('Question: {} {}\nYour answer: '.format(n1, n2))
-        if n1 % n2 == 0:
-            total = n2
-        elif n2 % n1 == 0:
-            total = n2
-        else:
-            for i in range(1, int(n1 // 2) + 1):
-                if n1 % i == 0 and n2 % i == 0:
-                    total = i
+        for i in range(1, int(max(n1, n2) // 2) + 1):
+            if n1 % i == 0 and n2 % i == 0:
+                total = i
         if int(answer) == total:
             print('Correct!')
         else:

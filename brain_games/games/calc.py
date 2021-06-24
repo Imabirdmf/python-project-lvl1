@@ -7,16 +7,17 @@ from brain_games.games import greetings
 def calc_game(name):
     print('What is the result of the expression?')
     for _ in range(1, 4):
-        number1 = random.randint(1, 1000)
-        number2 = random.randint(1, 1000)
-        operation = random.choice('+-*')
-        answer = prompt.string('Question: {} {} {}\nYour answer: '.format(number1, operation, number2))
-        if operation == '-':
-            total = number1 - number2
-        elif operation == '+':
-            total = number1 + number2
-        elif operation == '*':
-            total = number1 * number2
+        n1 = random.randint(1, 1000)
+        n2 = random.randint(1, 1000)
+        op = random.choice('+-*')
+        print('Question: {} {} {}'.format(n1, op, n2))
+        answer = prompt.string('Your answer: ')
+        if op == '-':
+            total = n1 - n2
+        elif op == '+':
+            total = n1 + n2
+        elif op == '*':
+            total = n1 * n2
         if int(answer) == total:
             print('Correct!')
         else:

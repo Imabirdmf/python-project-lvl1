@@ -12,4 +12,5 @@ def congratulations(name):
 
 
 def failure(answer, total, name):
-    print("{} is wrong answer ;(. Correct answer was {}.\nLet's try again, {}!".format(answer, total, name))
+    print('{} is wrong answer ;(. Correct answer was {}.'.format(answer, total))
+    print("Let's try again, {}!".format(name))

@@ -1,22 +1,15 @@
 import random
 
-import prompt
-from brain_games.games import greetings
+rule = 'Answer "yes" if the number is even, otherwise answer "no".'
+left_border = 1
+right_border = 1000
 
 
-def even_game(name):
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    for _ in range(1, 4):
-        number = random.randint(1, 1000)
-        answer = prompt.string('Question: {}\nYour answer: '.format(number))
-        if number % 2 == 0:
-            total = 'yes'
-        elif number % 2 != 0:
-            total = 'no'
-        if answer == total:
-            print('Correct!')
-        else:
-            greetings.failure(answer, total, name)
-            break  # Здесь потом можно возвращать значение
-    else:
-        greetings.congratulations(name)  # Здесь потом можно возвращать значение
+def calculation():
+    number = random.randint(left_border, right_border)
+    question = 'Question: {0}'.format(number)
+    if number % 2 == 0:
+        total = 'yes'
+    elif number % 2 != 0:
+        total = 'no'
+    return (question, total)

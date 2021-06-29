@@ -9,7 +9,9 @@ def game_circle(name, game):
         (question, total) = question_and_total
         print(question)
         answer = prompt.string('Your answer: ')
-        if int(answer) == total:
+        if answer.isdigit():
+            answer = int(answer)
+        if answer == total:
             print('Correct!')
         else:
             greetings.failure(answer, total, name)

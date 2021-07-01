@@ -14,7 +14,7 @@ def calculate():
     # выбирается случайная позиция не больше длины прогрессии
     position = random.randint(0, progression_len)
     # длина прогрессии (не задаётся случайно, зависит от правой границы)
-    for index in range(1, progression_len):
+    for index in range(1, progression_len + 1):
         progression.append(progression[index - 1] + number)
     total = progression[position]
     progression.insert(position, '..')

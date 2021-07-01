@@ -1,27 +1,23 @@
 import random
 
-import prompt
-from brain_games.games import greetings
+rule = 'What number is missing in the progression?'
+l_border = 1
+r_border = 20
+progression_len = r_border // 2
+# выбирается шаг прогрессии
+number = random.randint(1, 6)
 
 
-def progression_game(name):
-    print('What number is missing in the progression?')
-    for _ in range(1, 4):
-        n = random.randint(1, 5)
-        pos = random.randint(1, 10)
-        progression = [random.randint(1, 20)]
-        s = str(progression[0]) + ' '
-        for i in range(1, 11):
-            progression.append(progression[i - 1] + n)
-            s = s + str(progression[i]) + ' '
-            if i == pos:
-                s = s.replace(str(progression[i]), '..')
-        answer = prompt.string('Question: {}\nYour answer: '.format(s.rstrip()))
-        total = progression[pos]
-        if int(answer) == total:
-            print('Correct!')
-        else:
-            greetings.failure(answer, total, name)
-            break  # Здесь потом можно возвращать значение
-    else:
-        greetings.congratulations(name)  # Здесь потом можно возвращать значение
+def calculate():
+    # выбирается случайная первая цифра прогрессии
+    progression = [random.randint(l_border, r_border)]
+    # выбирается случайная позиция не больше длины прогрессии
+    position = random.randint(0, progression_len)
+    # длина прогрессии (не задаётся случайно, зависит от правой границы)
+    for index in range(1, progression_len):
+        progression.append(progression[index - 1] + number)
+    total = progression[position]
+    progression.insert(position, '..')
+    progression.pop(position + 1)
+    question = ' '.join(str(number) for number in progression)
+    return (question, total)

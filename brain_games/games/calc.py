@@ -1,13 +1,13 @@
 import random
 
 rule = 'What is the result of the expression?'
-left_border = 1
-right_border = 100
+l_border = 1
+r_border = 100
 
 
-def calculation():
-    num1 = random.randint(left_border, right_border)
-    num2 = random.randint(left_border, right_border)
+def calculate():
+    num1 = random.randint(l_border, r_border)
+    num2 = random.randint(l_border, r_border)
     operator = random.choice('+-*')
     question = 'Question: {0} {1} {2}'.format(num1, operator, num2)
     if operator == '-':

@@ -25,7 +25,7 @@
 Для установки необходимо собрать пакет в poetry:
 poetry build
 
-И установить его:
+и установить его:
 python3 -m pip install hexlet_code-0.1.0-py3-none-any.whl
 
 ### Hexlet tests and linter status:

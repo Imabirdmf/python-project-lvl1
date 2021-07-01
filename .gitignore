@@ -3,3 +3,4 @@
 brain_games/games/__pycache__/
 dist/
 poetry.lock
+brain_games/scripts/__pycache__/brain_games.cpython-38.pyc

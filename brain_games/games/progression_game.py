@@ -20,4 +20,4 @@ def calculate():
     progression.insert(position, '..')
     progression.pop(position + 1)
     progression = ' '.join(str(number) for number in progression)
-    return (progression, total)
+    return ('Question: {0}'.format(progression), total)

@@ -4,11 +4,11 @@ rule = 'What number is missing in the progression?'
 l_border = 1
 r_border = 20
 progression_len = r_border // 2
-# выбирается шаг прогрессии
-number = random.randint(1, 6)
 
 
 def calculate():
+    # выбирается шаг прогрессии
+    number = random.randint(1, 6)
     # выбирается случайная первая цифра прогрессии
     progression = [random.randint(l_border, r_border)]
     # выбирается случайная позиция не больше длины прогрессии
@@ -19,5 +19,5 @@ def calculate():
     total = progression[position]
     progression.insert(position, '..')
     progression.pop(position + 1)
-    question = ' '.join(str(number) for number in progression)
-    return (question, total)
+    progression = ' '.join(str(number) for number in progression)
+    return (progression, total)

@@ -1,20 +1,26 @@
 import random
 
 rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-l_border = 1
-r_border = 100
+#  Position to start and stop for randint method
+START = 1
+STOP = 100
 
 
-def calculate():
-    num = random.randint(l_border, r_border)
-    question = 'Question: {0}'.format(num)
+def is_prime(num):
     flag = True
     for index in range(2, int(num ** 0.5) + 1):
         if num % index == 0:
             flag = False
             break
+    return flag
+
+
+def get_right_answer():
+    num = random.randint(START, STOP)
+    question = '{0}'.format(num)
+    flag = is_prime(num)
     if num > 1 and flag is True:
-        total = 'yes'
+        right_answer = 'yes'
     else:
-        total = 'no'
-    return (question, total)
+        right_answer = 'no'
+    return (question, right_answer)

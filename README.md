@@ -1,38 +1,42 @@
-Учебный проект #1 для курса Python Developer на hexlet.io
-Проект "Игры разума" состоит из 5 простых игр.
-Значения для вопросов выбираются случайным образом.
+Training project #1 for a Python Developer course at hexlet.io
+This project consist of 5 simple games. There is randomizer for numbers at questions.
 
-1. Игра "Проверка на чётность"
-Правила игры: игроку показывается случайное число, ему нужно ответить 'yes', если число чётное, или 'no' — если нечётное.
-Команда для запуска: brain-even
 
-2. Игра "Калькулятор"
-Правила игры: игроку показывается случайное математическое выражение, например 35 + 16, которое ему нужно вычислить и записать правильный ответ.
-Команда для запуска: brain-calc
+1. "Check if number is even" game  
+   Rules: random number will be shown and gamer should input answer 'yes' if it is even, and 'no' if it isn't.  
+   You can start it by `brain-even`
+   
+    
+2. "Calculator" game  
+   Rules: random math expression will be shown, for example, 15 + 16, which gamer should calculate and input answer.   
+   You can start it by `brain-calc`
+   
+   
+3. "Greatest common divisor" game  
+   Rules: two random numbers will be shown, for example, 20 50. Gamer should calculate and input the greatest common divisor for this two numbers, 10 in this case.  
+   You can start it by `brain-gcd`
+   
 
-3. Игра "Наибольший общий делитель"
-Правила игры: игроку показывается два случайных числа, например, 25 50. Он должен вычислить и ввести наибольший общий делитель этих чисел.
-Команда для запуска: brain-gcd
+4. "Arithmetic progression" game  
+   Rules: a sequence of numbers, which is present the arithmetic progression, will be shown. One term will be replaced with '..'. Gamer should calculate and input this term.  
+   You can start it by `brain-progression`
 
-4. Игра "Арифметическая прогрессия"
-Правила игры: показываем игроку ряд чисел, образующий арифметическую прогрессию, заменив любое из чисел двумя точками. Игрок должен определить и ввести это число.
-Команда для запуска: brain-progression
 
-5. Игра "Простое ли число?"
-Правила игры: игроку показывается случайное число, ему нужно ответить 'yes', если число простое, или 'no' — если нет.
-Команда для запуска: brain-prime
+5. "Check if number is prime" game  
+   Rules:  random number will be shown and gamer should input answer 'yes' if it is prime, and 'no' if it isn't.
+   You can start it by `brain-prime`
 
-Для установки необходимо собрать пакет в poetry:
-poetry build
 
-и установить его:
-python3 -m pip install hexlet_code-0.1.0-py3-none-any.whl
+Make installation build by **poetry**:  
+`poetry build`  
+and install it:  
+`python3 -m pip install hexlet_code-0.1.0-py3-none-any.whl`
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Imabirdmf/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Imabirdmf/python-project-lvl1/actions)
 ### MAINTAINABILITY FROM CODE CLIMATE:
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
-### Github Actions:
+### GitHub Actions:
 ![Github Actions Status](https://github.com/Imabirdmf/python-project-lvl1/actions/workflows/main.yml/badge.svg)
 
 ###brain-even:

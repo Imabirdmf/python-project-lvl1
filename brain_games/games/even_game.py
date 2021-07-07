@@ -1,15 +1,15 @@
 import random
 
 rule = 'Answer "yes" if the number is even, otherwise answer "no".'
-l_border = 1
-r_border = 1000
+START = 1
+STOP = 1000
 
 
-def calculate():
-    number = random.randint(l_border, r_border)
-    question = 'Question: {0}'.format(number)
+def get_right_answer():
+    number = random.randint(START, STOP)
+    question = '{0}'.format(number)
     if number % 2 == 0:
-        total = 'yes'
-    elif number % 2 != 0:
-        total = 'no'
-    return (question, total)
+        right_answer = 'yes'
+    else:
+        right_answer = 'no'
+    return (question, right_answer)

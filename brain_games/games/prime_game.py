@@ -17,7 +17,7 @@ def is_prime(num):
 
 def get_right_answer():
     num = random.randint(START, STOP)
-    question = '{0}'.format(num)
+    question = str(num)
     flag = is_prime(num)
     if num > 1 and flag is True:
         right_answer = 'yes'

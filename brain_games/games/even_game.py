@@ -7,7 +7,7 @@ STOP = 1000
 
 def get_right_answer():
     number = random.randint(START, STOP)
-    question = '{0}'.format(number)
+    question = str(number)
     if number % 2 == 0:
         right_answer = 'yes'
     else:

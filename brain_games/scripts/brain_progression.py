@@ -4,7 +4,6 @@ from brain_games.games import progression_game
 
 
 def main():
-    print('Welcome to the Brain Games!')
     engine.is_right_answer(progression_game)
 
 

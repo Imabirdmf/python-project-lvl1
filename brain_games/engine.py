@@ -5,6 +5,7 @@ GAME_CIRCLE_TO = 4
 
 
 def is_right_answer(game):
+    print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello, {0}!'.format(name))
     print(game.rule)

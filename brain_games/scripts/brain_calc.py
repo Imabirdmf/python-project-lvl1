@@ -4,7 +4,6 @@ from brain_games.games import calc
 
 
 def main():
-    print('Welcome to the Brain Games!')
     engine.is_right_answer(calc)
 
 

@@ -6,9 +6,9 @@ START = 1
 STOP = 20
 LENGTH = 10
 progression_start = random.randint(START, STOP)
-diff_start = 1
-diff_stop = 5
-diff = random.randint(diff_start, diff_stop)
+DIFF_START = 1
+DIFF_STOP = 5
+diff = random.randint(DIFF_START, DIFF_STOP)
 position = random.randint(0, LENGTH - 1)
 
 

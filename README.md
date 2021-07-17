@@ -1,3 +1,26 @@
+### Hexlet tests and linter status:
+[![Actions Status](https://github.com/Imabirdmf/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Imabirdmf/python-project-lvl1/actions)
+### MAINTAINABILITY FROM CODE CLIMATE:
+[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+### GitHub Actions:
+![Github Actions Status](https://github.com/Imabirdmf/python-project-lvl1/actions/workflows/main.yml/badge.svg)
+
+###brain-even:
+https://asciinema.org/a/FH0QmwCDQjMAjS61YiofD2oPE
+
+###brain-calc:
+https://asciinema.org/a/FwExWEtf4pB4BIzL8nqSy9Zza
+
+###brain-gcd:
+https://asciinema.org/a/wn0lVMRECEoUkIO5kwnEvCC0p
+
+###brain-prg:
+https://asciinema.org/a/MnoYtzv54yCN5h3XcCOhOQINg
+
+###brain-prime
+https://asciinema.org/a/CZYLAPzIOt5EolePsskU15s52
+
+
 Training project #1 for a Python Developer course at hexlet.io
 This project consist of 5 simple games. There is randomizer for numbers at questions.
 
@@ -31,25 +54,3 @@ Make installation build by **poetry**:
 `poetry build`  
 and install it:  
 `python3 -m pip install hexlet_code-0.1.0-py3-none-any.whl`
-
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/Imabirdmf/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Imabirdmf/python-project-lvl1/actions)
-### MAINTAINABILITY FROM CODE CLIMATE:
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
-### GitHub Actions:
-![Github Actions Status](https://github.com/Imabirdmf/python-project-lvl1/actions/workflows/main.yml/badge.svg)
-
-###brain-even:
-https://asciinema.org/a/FH0QmwCDQjMAjS61YiofD2oPE
-
-###brain-calc:
-https://asciinema.org/a/FwExWEtf4pB4BIzL8nqSy9Zza
-
-###brain-gcd:
-https://asciinema.org/a/wn0lVMRECEoUkIO5kwnEvCC0p
-
-###brain-prg:
-https://asciinema.org/a/MnoYtzv54yCN5h3XcCOhOQINg
-
-###brain-prime
-https://asciinema.org/a/CZYLAPzIOt5EolePsskU15s52

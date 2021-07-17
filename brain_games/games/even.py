@@ -1,11 +1,11 @@
 import random
 
-rule = 'Answer "yes" if the number is even, otherwise answer "no".'
+RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 START = 1
 STOP = 1000
 
 
-def get_right_answer():
+def get_right_answer_and_question():
     number = random.randint(START, STOP)
     question = str(number)
     if number % 2 == 0:

@@ -1,12 +1,11 @@
 import random
 
-rule = 'What is the result of the expression?'
-#  Position to start and stop for randint method
+RULE = 'What is the result of the expression?'
 START = 1
 STOP = 100
 
 
-def get_right_answer():
+def get_right_answer_and_question():
     num1 = random.randint(START, STOP)
     num2 = random.randint(START, STOP)
     operator = random.choice('+-*')

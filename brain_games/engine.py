@@ -7,7 +7,7 @@ def is_right_answer(game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello, {0}!'.format(name))
-    print(game.rule)
+    print(game.RULE)
     for _ in range(ITERATION):
         question, right_answer = game.get_right_answer()
         print('Question: {0}'.format(question))

@@ -9,7 +9,7 @@ def is_right_answer(game):
     print('Hello, {0}!'.format(name))
     print(game.RULE)
     for _ in range(ITERATION):
-        question, right_answer = game.get_right_answer()
+        question, right_answer = game.get_right_answer_and_question()
         print('Question: {0}'.format(question))
         answer = prompt.string('Your answer: ')
         if answer == str(right_answer):
